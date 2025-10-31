@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Relatórios - Finanças Pessoais</title>
+    <link rel="stylesheet" href="../assets/css/relatorios.css">
+    <link rel="stylesheet" href="../assets/css/style.css">
+</head>
+<body>
+    <header>
+        <h1>Relatórios de Finanças Pessoais</h1>
+        <nav>
+            <ul>
+                <li><a href="dashboard.html">Dashboard</a></li>
+                <li><a href="despesas.html">Lançar Despesas</a></li>
+                <li><a href="relatorios.html">Relatórios</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="relatorios">
+            <h2>Relatórios</h2>
+            <div id="filtros">
+                <label for="categoria">Categoria:</label>
+                <select id="categoria">
+                    <option value="todas">Todas</option>
+                    <!-- Outras opções de categorias -->
+                </select>
+                <label for="periodo">Período:</label>
+                <select id="periodo">
+                    <option value="mensal">Mensal</option>
+                    <option value="anual">Anual</option>
+                </select>
+                <button id="gerar-relatorio">Gerar Relatório</button>
+            </div>
+            <table id="tabela-relatorios">
+                <thead>
+                    <tr>
+                        <th>Data</th>
+                        <th>Categoria</th>
+                        <th>Descrição</th>
+                        <th>Valor</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- Os dados dos relatórios serão inseridos aqui -->
+                </tbody>
+            </table>
+        </section>
+    </main>
+    <script src="../assets/js/relatorios.js"></script>
+</body>
+</html>

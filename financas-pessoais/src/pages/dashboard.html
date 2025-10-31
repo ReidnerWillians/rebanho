@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard - Finanças Pessoais</title>
+    <link rel="stylesheet" href="../assets/css/dashboard.css">
+    <link rel="stylesheet" href="../assets/css/style.css">
+</head>
+<body>
+    <header>
+        <h1>Dashboard de Finanças Pessoais</h1>
+    </header>
+    <main>
+        <section id="indicadores">
+            <div class="indicador">
+                <h2>Total de Despesas</h2>
+                <p id="total-despesas">R$ 0,00</p>
+            </div>
+            <div class="indicador">
+                <h2>Total de Contas Pagas</h2>
+                <p id="total-contas-pagas">R$ 0,00</p>
+            </div>
+            <div class="indicador">
+                <h2>Saldo Atual</h2>
+                <p id="saldo-atual">R$ 0,00</p>
+            </div>
+        </section>
+        <section id="tabela-lancamentos">
+            <h2>Lançamentos Recentes</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Data</th>
+                        <th>Descrição</th>
+                        <th>Categoria</th>
+                        <th>Valor</th>
+                        <th>Ações</th>
+                    </tr>
+                </thead>
+                <tbody id="lancamentos-tbody">
+                    <!-- Lançamentos serão inseridos aqui dinamicamente -->
+                </tbody>
+            </table>
+        </section>
+    </main>
+    <script src="../assets/js/dashboard.js"></script>
+</body>
+</html>
